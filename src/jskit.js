@@ -3,7 +3,7 @@
  *
  * Copyright 2013, arthur87
  * https://github.com/arthur87/JSKit
- * Dual licensed under the MIT.
+ *
  * http://www.opensource.org/licenses/mit-license.php
  */
 
