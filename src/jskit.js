@@ -1,5 +1,5 @@
 /*!
- * jskit.js v0.1
+ * jskit.js v0.2
  *
  * Copyright 2013, arthur87
  * https://github.com/arthur87/JSKit
@@ -17,7 +17,7 @@ var JSKit = (function() {
      * @param values 連想配列
      * @return JSON形式
      */
-    JSKit.json_encode = function(values) {
+    JSKit.jsonEncode = function(values) {
         var flag = true;
         var str = "{";
         for(var i in values) {
@@ -42,7 +42,7 @@ var JSKit = (function() {
      * @params value GETパラメータが存在しないときに返す値
      * @return 
      */
-    JSKit.getURLParams = function(key, value) {
+    JSKit.getURLParam = function(key, value) {
         var query = window.location.search.substring(1);
         params = query.split('&');
         for(var i = 0; i < params.length; i++) {
@@ -111,7 +111,7 @@ var JSKit = (function() {
      * @param max 生成する乱数の下限です。
      * @return 計算結果
      */
-    JSKit.mt_rand = function(max, min) {
+    JSKit.rand = function(max, min) {
         return Math.floor((max - min + 1) * Math.random() + min);
     };
     
